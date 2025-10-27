@@ -49,6 +49,10 @@ end
 
 local function ChangeTeam(Team)
     local CurrentTeam = LocalPlayer.Team
+    if CurrentTeam == Team and Team == Teams.Criminals then
+        -- Cannot Quick Respawn Criminals
+        return
+    end
     if Team == Teams.Criminals then
         ChangeTeam(Teams.Inmates)
         repeat task.wait() until LocalPlayer.Character
@@ -71,4 +75,4 @@ API.CanQuickRespawn = function()
 end
 API.Teams = Teams
 
-return API
+API.ChangeTeam(API.Teams.Criminals)
