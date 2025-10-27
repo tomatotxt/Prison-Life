@@ -75,4 +75,4 @@ API.CanQuickRespawn = function()
 end
 API.Teams = Teams
 
-API.ChangeTeam(API.Teams.Criminals)
+return API
