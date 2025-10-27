@@ -69,3 +69,4 @@ API.ChangeTeam = ChangeTeam
 API.CanQuickRespawn = function()
     return _G.CanQuickRespawn
 end
+API.Teams = Teams
