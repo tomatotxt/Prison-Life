@@ -70,3 +70,5 @@ API.CanQuickRespawn = function()
     return _G.CanQuickRespawn
 end
 API.Teams = Teams
+
+return API
