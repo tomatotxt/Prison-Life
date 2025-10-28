@@ -47,7 +47,7 @@ RunService.Heartbeat:Connect(function()
     if not GetTool(Gun1) then
         GetGun(Gun1)
     end
-    if not GetTool(Gun2) then
+    if not GetTool(Gun2) and GetTool(Gun1) then
         GetGun(Gun2)
     end
 end)
